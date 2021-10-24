@@ -12,8 +12,8 @@ with open(bank_data_cvs, 'r') as csvfile:
 file = open(bank_data_cvs)
 reader = csv.reader(file)
 header = next(reader)
-# Constants
 
+# Constants
 total_months = 0
 prev_revenue = 0
 month_of_change = []
@@ -50,8 +50,8 @@ output =(
 f"Total Months:  {total_months}\n"
 f"Total Revenue: {total_revenue}\n"
 f"Average  Change: {revenue_avg}\n"
-f"Greatest Increase in Revenue: {greatest_increase[0]} (${greatest_increase[1]}\n"
-f"Greatest Decrease in Revenue: {greatest_decrease[0]} (${greatest_decrease[1]}\n"
+f"Greatest Increase in Revenue: {greatest_increase[0]} ${greatest_increase[1]}\n"
+f"Greatest Decrease in Revenue: {greatest_decrease[0]} ${greatest_decrease[1]}\n"
 )
 print(output)
 
